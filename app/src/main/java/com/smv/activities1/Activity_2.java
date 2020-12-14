@@ -25,10 +25,10 @@ public class Activity_2 extends AppCompatActivity
         text = findViewById(R.id.editTextText);
         number = findViewById(R.id.editTextNumber);
 
-        buttonOpenActivity3.setOnClickListener(OpenActivity3_OnCLickListener);
+        buttonOpenActivity3.setOnClickListener(OpenActivity3_OnClickListener);
     }
 
-    public View.OnClickListener OpenActivity3_OnCLickListener = new View.OnClickListener()
+    public View.OnClickListener OpenActivity3_OnClickListener = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)

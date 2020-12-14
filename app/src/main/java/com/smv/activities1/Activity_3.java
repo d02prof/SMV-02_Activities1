@@ -19,14 +19,19 @@ public class Activity_3 extends AppCompatActivity
         //preberemo Intent
         Intent intent = getIntent();
 
+        //če želimo, lahko preverimo, ali je kaj v parametrih
+        //if(intent.hasExtra("EXTRA_NUMBER"))
         if(intent.hasExtra("EXTRA_STRING"))
         {
+            //preberemo parameter
             String textRead = intent.getStringExtra("EXTRA_STRING");
+            //komponente iz xml so lahko povezane z lokalnimi spremenljivkami
             TextView text = findViewById(R.id.textViewText);
             text.setText(textRead);
         }
 
-        if (intent.hasExtra("EXTRA_NUMBER"))
+        //če želimo, lahko preverimo, ali je kaj v parametrih
+        //if (intent.hasExtra("EXTRA_NUMBER"))
         {
             int numberRead = intent.getIntExtra("EXTRA_NUMBER", 0);
             TextView number = findViewById(R.id.textViewNumber);

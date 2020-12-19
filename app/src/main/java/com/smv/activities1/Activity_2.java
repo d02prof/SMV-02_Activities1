@@ -45,7 +45,7 @@ public class Activity_2 extends AppCompatActivity
                 numberRead = -1;
             }
 
-            Intent intent = new Intent(getApplicationContext(), Activity_3.class);
+            Intent intent = new Intent(Activity_2.this, Activity_3.class);
             intent.putExtra("EXTRA_STRING", textRead);
             intent.putExtra("EXTRA_NUMBER", numberRead);
             startActivity(intent);

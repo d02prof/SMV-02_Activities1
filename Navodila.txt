@@ -6,6 +6,7 @@
 
 //TODO Intent intent = new Intent(imeAktivnosti.this, Activity2.class);  samo this namesto imeAktivnosti.this očitno NE DELUJE več!
 //>TODO lahko tudi getApplicationContext() , ampak je odsvetovano, (ker lahko povzroči težave pri vračanju v activity stacku), bolje je uporabiti konteks aktivnosti, ne aplikacije
+//TODO v Toastu pa je vseeno
 
 //TODO Da lahko direktno poženemo neko aktivnost, je treba v manifest v njen <activity> dodati android:exported="true", potem pa lahko v Run / Edit configurations izberemo to aktivnost
 

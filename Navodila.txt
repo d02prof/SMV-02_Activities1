@@ -1,0 +1,26 @@
+//TODO  Navodila: Youtube / Code in Flow /
+
+//TODO  How to Open a New Activity and Pass Variables to It (https://www.youtube.com/watch?v=eL69kj-_Wvs)
+
+//TODO  How to Make a Button Open a New Activity (https://www.youtube.com/watch?v=bgIUdb-7Rqo)
+
+//TODO Intent intent = new Intent(imeAktivnosti.this, Activity2.class);  samo this namesto imeAktivnosti.this očitno NE DELUJE več!
+//>TODO lahko tudi getApplicationContext() , ampak je odsvetovano, (ker lahko povzroči težave pri vračanju v activity stacku), bolje je uporabiti konteks aktivnosti, ne aplikacije
+//TODO v Toastu pa je vseeno
+
+//TODO Da lahko direktno poženemo neko aktivnost, je treba v manifest v njen <activity> dodati android:exported="true", potem pa lahko v Run / Edit configurations izberemo to aktivnost
+
+//TODO Da lahko iz neke aktivnosti pridemo nazaj v prejšnjo s puščico levo zgoraj (ActionBar), je treba v manifest v njen <activity> dodati android:parentActivityName=".ImeStarševkegaAktivitija"
+//TODO Da se na prejšnjem aktivitiju ohranijo podatki, moramo za parent izbrati isto aktivnost (ne tiste na katero se vračamo, ampak tisto iz katere se vračamo
+
+//BARVE
+//TODO  s @color se skličeš na barve, definirane v res/values/colors.xml
+//TODO za barve iz teme (v res/values/themes/themes.xml in za dark teme v themes.xml(night)) uporabiš ?attr/
+//TODO za rgb uporabiš #RGB
+//TODO Action Bar: colorPrimary
+//TODO Status Bar: <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>  
+//TODO  - po defaultu colorPrimaryVariant
+//TODO  - lahko spremenim colorPrimaryVariant ali pa v zgornji vrstici spremenim iz colorPrimaryVariant na kaj drugega
+
+//TODO setTitle("Activity 2"); nam nastavi besedilo naslovne vrstice v aktivitiju (Action Bar)
+
